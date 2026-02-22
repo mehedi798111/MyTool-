@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator - MyTool</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body data-tool="simple-calculator">
+    <header>
+        <div class="container nav">
+            <a href="../index.html" class="logo"><i data-lucide="wrench"></i> MyTool</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="tool-header">
+            <div class="container">
+                <a href="../index.html"
+                    style="text-decoration:none; color:var(--primary); font-weight:500; display:flex; align-items:center; gap:5px; margin-bottom:1rem;">
+                    <i data-lucide="arrow-left" style="width:18px;"></i> Back to Home
+                </a>
+                <h1>Simple calculator</h1>
+                <p>Professional Simple calculator tool for everyday use.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="tool-container">
+                <div class="tool-controls">
+                    <input type="text" id="calcDisplay" class="input-field" readonly
+                        style="text-align: right; font-size: 2rem; height: 60px; margin-bottom: 20px;">
+                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+                        <button class="btn calc-btn" data-val="C" style="background: #ef4444;">C</button>
+                        <button class="btn calc-btn" data-val="/">/</button>
+                        <button class="btn calc-btn" data-val="*">*</button>
+                        <button class="btn calc-btn" data-val="-">-</button>
+                        <button class="btn calc-btn" data-val="7" style="background:#f1f5f9; color:#1e293b;">7</button>
+                        <button class="btn calc-btn" data-val="8" style="background:#f1f5f9; color:#1e293b;">8</button>
+                        <button class="btn calc-btn" data-val="9" style="background:#f1f5f9; color:#1e293b;">9</button>
+                        <button class="btn calc-btn" data-val="+">+</button>
+                        <button class="btn calc-btn" data-val="4" style="background:#f1f5f9; color:#1e293b;">4</button>
+                        <button class="btn calc-btn" data-val="5" style="background:#f1f5f9; color:#1e293b;">5</button>
+                        <button class="btn calc-btn" data-val="6" style="background:#f1f5f9; color:#1e293b;">6</button>
+                        <button class="btn calc-btn" data-val="="
+                            style="grid-row: span 2; background: var(--accent);">=</button>
+                        <button class="btn calc-btn" data-val="1" style="background:#f1f5f9; color:#1e293b;">1</button>
+                        <button class="btn calc-btn" data-val="2" style="background:#f1f5f9; color:#1e293b;">2</button>
+                        <button class="btn calc-btn" data-val="3" style="background:#f1f5f9; color:#1e293b;">3</button>
+                        <button class="btn calc-btn" data-val="0"
+                            style="grid-column: span 2; background:#f1f5f9; color:#1e293b;">0</button>
+                        <button class="btn calc-btn" data-val="." style="background:#f1f5f9; color:#1e293b;">.</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 MyTool Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

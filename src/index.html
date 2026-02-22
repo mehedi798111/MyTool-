@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTool - All-in-One Professional Tools Platform</title>
+    <meta name="description" content="Access 50+ professional online tools for developers, designers, writers, and daily productivity. Completely free and user-friendly.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <i data-lucide="wrench"></i>
+                MyTool
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Simplifying Your Workflow</h1>
+                <p>50+ powerful, free, and privacy-focused tools designed to help you build, create, and manage your daily tasks better.</p>
+                <div class="search-container">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" id="toolSearch" class="search-input" placeholder="Search for a tool (e.g. JSON, BMI, Word Counter)...">
+                </div>
+            </div>
+        </section>
+
+        <section class="container category-section">
+            <h2 class="category-title">Calculator & Math Tools</h2>
+            <div class="tools-grid" id="category-1">
+                <!-- Tools 1-10 -->
+                <a href="tools/simple-calculator.html" class="tool-card" data-name="simple calculator">
+                    <div class="tool-icon"><i data-lucide="calculator"></i></div>
+                    <div class="tool-name">Simple Calculator</div>
+                    <p class="tool-desc">Quickly perform basic arithmetic operations like addition, subtraction, etc.</p>
+                </a>
+                <a href="tools/percentage-calculator.html" class="tool-card" data-name="percentage calculator">
+                    <div class="tool-icon"><i data-lucide="percent"></i></div>
+                    <div class="tool-name">Percentage Calculator</div>
+                    <p class="tool-desc">Calculate percentages, increases, and decreases with ease.</p>
+                </a>
+                <a href="tools/age-calculator.html" class="tool-card" data-name="age calculator">
+                    <div class="tool-icon"><i data-lucide="calendar"></i></div>
+                    <div class="tool-name">Age Calculator</div>
+                    <p class="tool-desc">Calculate your exact age in years, months, and days.</p>
+                </a>
+                <a href="tools/emi-calculator.html" class="tool-card" data-name="emi calculator">
+                    <div class="tool-icon"><i data-lucide="banknote"></i></div>
+                    <div class="tool-name">EMI Loan Calculator</div>
+                    <p class="tool-desc">Plan your finances by calculating monthly loan installments.</p>
+                </a>
+                <a href="tools/bmi-calculator.html" class="tool-card" data-name="bmi calculator">
+                    <div class="tool-icon"><i data-lucide="activity"></i></div>
+                    <div class="tool-name">BMI Calculator</div>
+                    <p class="tool-desc">Check your Body Mass Index and health status instantly.</p>
+                </a>
+                <a href="tools/discount-calculator.html" class="tool-card" data-name="discount calculator">
+                    <div class="tool-icon"><i data-lucide="tag"></i></div>
+                    <div class="tool-name">Discount Calculator</div>
+                    <p class="tool-desc">Calculate the final price after applying discounts.</p>
+                </a>
+                <a href="tools/profit-loss-calculator.html" class="tool-card" data-name="profit loss calculator">
+                    <div class="tool-icon"><i data-lucide="trending-up"></i></div>
+                    <div class="tool-name">Profit & Loss Calculator</div>
+                    <p class="tool-desc">Calculate profit/loss margins and percentages for your business.</p>
+                </a>
+                <a href="tools/currency-converter.html" class="tool-card" data-name="currency converter">
+                    <div class="tool-icon"><i data-lucide="languages"></i></div>
+                    <div class="tool-name">Currency Converter</div>
+                    <p class="tool-desc">Convert between popular global currencies at fixed rates.</p>
+                </a>
+                <a href="tools/scientific-calculator.html" class="tool-card" data-name="scientific calculator">
+                    <div class="tool-icon"><i data-lucide="flask-conical"></i></div>
+                    <div class="tool-name">Scientific Calculator</div>
+                    <p class="tool-desc">Advanced functions including trigonometry, logs, and more.</p>
+                </a>
+                <a href="tools/unit-converter.html" class="tool-card" data-name="unit converter">
+                    <div class="tool-icon"><i data-lucide="ruler"></i></div>
+                    <div class="tool-name">Unit Converter</div>
+                    <p class="tool-desc">Convert units across weight, length, temperature and volume.</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="container category-section">
+            <h2 class="category-title">Text & Writing Tools</h2>
+            <div class="tools-grid" id="category-2">
+                <!-- Tools 11-20 -->
+                <a href="tools/word-counter.html" class="tool-card" data-name="word counter">
+                    <div class="tool-icon"><i data-lucide="type"></i></div>
+                    <div class="tool-name">Word Counter</div>
+                    <p class="tool-desc">Count the number of words, sentences, and paragraphs in your text.</p>
+                </a>
+                <a href="tools/character-counter.html" class="tool-card" data-name="character counter">
+                    <div class="tool-icon"><i data-lucide="hash"></i></div>
+                    <div class="tool-name">Character Counter</div>
+                    <p class="tool-desc">Count characters with and without spaces instantly.</p>
+                </a>
+                <a href="tools/case-converter.html" class="tool-card" data-name="case converter">
+                    <div class="tool-icon"><i data-lucide="case-upper"></i></div>
+                    <div class="tool-name">Case Converter</div>
+                    <p class="tool-desc">Convert text to UPPERCASE, lowercase, Title Case, etc.</p>
+                </a>
+                <a href="tools/remove-extra-spaces.html" class="tool-card" data-name="remove extra spaces">
+                    <div class="tool-icon"><i data-lucide="scissors"></i></div>
+                    <div class="tool-name">Remove Extra Spaces</div>
+                    <p class="tool-desc">Clean up your text by removing unnecessary white spaces.</p>
+                </a>
+                <a href="tools/text-reverser.html" class="tool-card" data-name="text reverser">
+                    <div class="tool-icon"><i data-lucide="arrow-left-right"></i></div>
+                    <div class="tool-name">Text Reverser</div>
+                    <p class="tool-desc">Flip your text backwards with a single click.</p>
+                </a>
+                <a href="tools/password-generator.html" class="tool-card" data-name="password generator">
+                    <div class="tool-icon"><i data-lucide="lock"></i></div>
+                    <div class="tool-name">Password Generator</div>
+                    <p class="tool-desc">Create strong, secure, and random passwords for your accounts.</p>
+                </a>
+                <a href="tools/random-name-picker.html" class="tool-card" data-name="random name picker">
+                    <div class="tool-icon"><i data-lucide="user-plus"></i></div>
+                    <div class="tool-name">Random Name Picker</div>
+                    <p class="tool-desc">Pick a random winner or name from your custom list.</p>
+                </a>
+                <a href="tools/lorem-ipsum-generator.html" class="tool-card" data-name="lorem ipsum generator">
+                    <div class="tool-icon"><i data-lucide="file-text"></i></div>
+                    <div class="tool-name">Lorem Ipsum Generator</div>
+                    <p class="tool-desc">Generate placeholder text for your designs and mockups.</p>
+                </a>
+                <a href="tools/slug-generator.html" class="tool-card" data-name="slug generator">
+                    <div class="tool-icon"><i data-lucide="link"></i></div>
+                    <div class="tool-name">Slug Generator</div>
+                    <p class="tool-desc">Convert any title into a clean, URL-friendly slug.</p>
+                </a>
+                <a href="tools/text-to-binary.html" class="tool-card" data-name="text to binary">
+                    <div class="tool-icon"><i data-lucide="binary"></i></div>
+                    <div class="tool-name">Text to Binary</div>
+                    <p class="tool-desc">Convert text to binary code and decode it back.</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="container category-section">
+            <h2 class="category-title">Developer Tools</h2>
+            <div class="tools-grid" id="category-3">
+                <!-- Tools 21-30 -->
+                <a href="tools/json-formatter.html" class="tool-card" data-name="json formatter">
+                    <div class="tool-icon"><i data-lucide="code-2"></i></div>
+                    <div class="tool-name">JSON Formatter</div>
+                    <p class="tool-desc">Validate and beautify your JSON data for better readability.</p>
+                </a>
+                <a href="tools/base64-encoder-decoder.html" class="tool-card" data-name="base64 encoder decoder">
+                    <div class="tool-icon"><i data-lucide="shield-check"></i></div>
+                    <div class="tool-name">Base64 Encoder/Decoder</div>
+                    <p class="tool-desc">Encode or decode strings using Base64 algorithm.</p>
+                </a>
+                <a href="tools/url-encoder-decoder.html" class="tool-card" data-name="url encoder decoder">
+                    <div class="tool-icon"><i data-lucide="globe"></i></div>
+                    <div class="tool-name">URL Encoder/Decoder</div>
+                    <p class="tool-desc">Safe-encode or decode URLs for web navigation.</p>
+                </a>
+                <a href="tools/html-minifier.html" class="tool-card" data-name="html minifier">
+                    <div class="tool-icon"><i data-lucide="file-code"></i></div>
+                    <div class="tool-name">HTML Minifier</div>
+                    <p class="tool-desc">Reduce your HTML file size by removing extra characters.</p>
+                </a>
+                <a href="tools/css-minifier.html" class="tool-card" data-name="css minifier">
+                    <div class="tool-icon"><i data-lucide="palette"></i></div>
+                    <div class="tool-name">CSS Minifier</div>
+                    <p class="tool-desc">Optimize your CSS code for faster website loading.</p>
+                </a>
+                <a href="tools/js-minifier.html" class="tool-card" data-name="js minifier">
+                    <div class="tool-icon"><i data-lucide="box"></i></div>
+                    <div class="tool-name">JS Minifier</div>
+                    <p class="tool-desc">Minify your JavaScript to improve performance.</p>
+                </a>
+                <a href="tools/regex-tester.html" class="tool-card" data-name="regex tester">
+                    <div class="tool-icon"><i data-lucide="terminal"></i></div>
+                    <div class="tool-name">Regex Tester</div>
+                    <p class="tool-desc">Test and debug regular expressions in real-time.</p>
+                </a>
+                <a href="tools/timestamp-converter.html" class="tool-card" data-name="timestamp converter">
+                    <div class="tool-icon"><i data-lucide="clock"></i></div>
+                    <div class="tool-name">Timestamp Converter</div>
+                    <p class="tool-desc">Convert Unix timestamps to human-readable dates.</p>
+                </a>
+                <a href="tools/color-code-converter.html" class="tool-card" data-name="color code converter">
+                    <div class="tool-icon"><i data-lucide="pipette"></i></div>
+                    <div class="tool-name">Color Code Converter</div>
+                    <p class="tool-desc">Switch between HEX, RGB, and HSL color formats.</p>
+                </a>
+                <a href="tools/uuid-generator.html" class="tool-card" data-name="uuid generator">
+                    <div class="tool-icon"><i data-lucide="fingerprint"></i></div>
+                    <div class="tool-name">UUID Generator</div>
+                    <p class="tool-desc">Generate version 4 UUIDs (Universally Unique Identifiers).</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="container category-section">
+            <h2 class="category-title">Design & Image Tools</h2>
+            <div class="tools-grid" id="category-4">
+                <!-- Tools 31-40 -->
+                <a href="tools/gradient-generator.html" class="tool-card" data-name="gradient generator">
+                    <div class="tool-icon"><i data-lucide="blinds"></i></div>
+                    <div class="tool-name">Gradient Generator</div>
+                    <p class="tool-desc">Design beautiful CSS gradients with live preview.</p>
+                </a>
+                <a href="tools/box-shadow-generator.html" class="tool-card" data-name="box shadow generator">
+                    <div class="tool-icon"><i data-lucide="layers"></i></div>
+                    <div class="tool-name">Box Shadow Generator</div>
+                    <p class="tool-desc">Create perfect CSS box shadows with visual controls.</p>
+                </a>
+                <a href="tools/border-radius-generator.html" class="tool-card" data-name="border radius generator">
+                    <div class="tool-icon"><i data-lucide="square"></i></div>
+                    <div class="tool-name">Border Radius Generator</div>
+                    <p class="tool-desc">Generate CSS code for rounded corners of any shape.</p>
+                </a>
+                <a href="tools/qr-code-generator.html" class="tool-card" data-name="qr code generator">
+                    <div class="tool-icon"><i data-lucide="qr-code"></i></div>
+                    <div class="tool-name">QR Code Generator</div>
+                    <p class="tool-desc">Convert any URL or text into a downloadable QR code.</p>
+                </a>
+                <a href="tools/image-compressor.html" class="tool-card" data-name="image compressor">
+                    <div class="tool-icon"><i data-lucide="image-down"></i></div>
+                    <div class="tool-name">Image Compressor</div>
+                    <p class="tool-desc">Compress images without losing quality for faster loads.</p>
+                </a>
+                <a href="tools/image-to-base64.html" class="tool-card" data-name="image to base64">
+                    <div class="tool-icon"><i data-lucide="image"></i></div>
+                    <div class="tool-name">Image to Base64</div>
+                    <p class="tool-desc">Convert images into Base64 strings for CSS/HTML.</p>
+                </a>
+                <a href="tools/favicon-generator.html" class="tool-card" data-name="favicon generator">
+                    <div class="tool-icon"><i data-lucide="smartphone"></i></div>
+                    <div class="tool-name">Favicon Generator</div>
+                    <p class="tool-desc">Create favicons for your website from any image.</p>
+                </a>
+                <a href="tools/svg-shape-generator.html" class="tool-card" data-name="svg shape generator">
+                    <div class="tool-icon"><i data-lucide="shapes"></i></div>
+                    <div class="tool-name">SVG Shape Generator</div>
+                    <p class="tool-desc">Easily generate SVG shapes for your web projects.</p>
+                </a>
+                <a href="tools/color-palette-generator.html" class="tool-card" data-name="color palette generator">
+                    <div class="tool-icon"><i data-lucide="palette"></i></div>
+                    <div class="tool-name">Color Palette Generator</div>
+                    <p class="tool-desc">Generate harmonious color schemes from a base color.</p>
+                </a>
+                <a href="tools/meme-generator.html" class="tool-card" data-name="meme generator">
+                    <div class="tool-icon"><i data-lucide="smile"></i></div>
+                    <div class="tool-name">Meme Text Overlay</div>
+                    <p class="tool-desc">Add funny text overlays to your images quickly.</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="container category-section">
+            <h2 class="category-title">Daily Life & Utility Tools</h2>
+            <div class="tools-grid" id="category-5">
+                <!-- Tools 41-50 -->
+                <a href="tools/todo-list.html" class="tool-card" data-name="todo list">
+                    <div class="tool-icon"><i data-lucide="list-todo"></i></div>
+                    <div class="tool-name">To-Do List</div>
+                    <p class="tool-desc">Manage your tasks with persistence using local storage.</p>
+                </a>
+                <a href="tools/countdown-timer.html" class="tool-card" data-name="countdown timer">
+                    <div class="tool-icon"><i data-lucide="timer"></i></div>
+                    <div class="tool-name">Countdown Timer</div>
+                    <p class="tool-desc">Set timers for your events or deadlines easily.</p>
+                </a>
+                <a href="tools/pomodoro-timer.html" class="tool-card" data-name="pomodoro timer">
+                    <div class="tool-icon"><i data-lucide="hourglass"></i></div>
+                    <div class="tool-name">Pomodoro Timer</div>
+                    <p class="tool-desc">Focus better with 25/5 minute work and break cycles.</p>
+                </a>
+                <a href="tools/habit-tracker.html" class="tool-card" data-name="habit tracker">
+                    <div class="tool-icon"><i data-lucide="calendar-check"></i></div>
+                    <div class="tool-name">Habit Tracker</div>
+                    <p class="tool-desc">Track and build your daily habits consistently.</p>
+                </a>
+                <a href="tools/daily-expense.html" class="tool-card" data-name="daily expense">
+                    <div class="tool-icon"><i data-lucide="credit-card"></i></div>
+                    <div class="tool-name">Daily Expense Calculator</div>
+                    <p class="tool-desc">Keep track of your spending habits day by day.</p>
+                </a>
+                <a href="tools/gpa-calculator.html" class="tool-card" data-name="gpa calculator">
+                    <div class="tool-icon"><i data-lucide="graduation-cap"></i></div>
+                    <div class="tool-name">GPA Calculator</div>
+                    <p class="tool-desc">Calculate your Grade Point Average from subject grades.</p>
+                </a>
+                <a href="tools/calorie-calculator.html" class="tool-card" data-name="calorie calculator">
+                    <div class="tool-icon"><i data-lucide="utensils"></i></div>
+                    <div class="tool-name">Calorie Calculator</div>
+                    <p class="tool-desc">Estimate your daily calorie requirements for health goals.</p>
+                </a>
+                <a href="tools/electricity-bill.html" class="tool-card" data-name="electricity bill">
+                    <div class="tool-icon"><i data-lucide="zap"></i></div>
+                    <div class="tool-name">Electricity Bill Calculator</div>
+                    <p class="tool-desc">Estimate your electricity costs based on usage units.</p>
+                </a>
+                <a href="tools/typing-speed-test.html" class="tool-card" data-name="typing speed test">
+                    <div class="tool-icon"><i data-lucide="keyboard"></i></div>
+                    <div class="tool-name">Typing Speed Test</div>
+                    <p class="tool-desc">Test your WPM and accuracy in a fun typing challenge.</p>
+                </a>
+                <a href="tools/random-quote.html" class="tool-card" data-name="random quote">
+                    <div class="tool-icon"><i data-lucide="quote"></i></div>
+                    <div class="tool-name">Random Quote Generator</div>
+                    <p class="tool-desc">Get inspired by unique random quotes from great minds.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>MyTool</h2>
+                <p>The ultimate toolkit for everything you need on the web. Professional, free, and always improving.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MyTool Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Search functionality
+        const searchInput = document.getElementById('toolSearch');
+        const toolCards = document.querySelectorAll('.tool-card');
+
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            toolCards.forEach(card => {
+                const name = card.getAttribute('data-name');
+                if (name.includes(query)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

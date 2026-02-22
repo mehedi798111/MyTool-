@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MyTool</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <i data-lucide="wrench"></i>
+                MyTool
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 4rem 1.5rem;">
+        <div style="max-width: 600px; margin: 0 auto;">
+            <h1 style="font-size: 2.5rem; margin-bottom: 1rem; text-align: center;">Get in Touch</h1>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">Have a tool suggestion or
+                found a bug? We'd love to hear from you!</p>
+
+            <form id="contactForm" class="tool-container">
+                <div class="tool-controls">
+                    <div class="input-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="input-field" placeholder="John Doe" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="input-field" placeholder="john@example.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" class="input-field">
+                            <option>Tool Suggestion</option>
+                            <option>Bug Report</option>
+                            <option>Partnership</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="input-field" rows="5" placeholder="Tell us more..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+            <div id="contactSuccess"
+                style="display: none; text-align: center; padding: 2rem; background: #ecfdf5; color: #065f46; border-radius: 12px; margin-top: 1rem;">
+                <i data-lucide="check-circle" style="margin-bottom: 0.5rem;"></i>
+                <p>Thank you! Your message has been sent successfully.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer Content Same as Homepage -->
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>MyTool</h2>
+                <p>The ultimate toolkit for everything you need on the web.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MyTool Platform. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        lucide.createIcons();
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('contactSuccess').style.display = 'block';
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 3000);
+        });
+    </script>
+</body>
+
+</html>
